@@ -13,6 +13,10 @@
 		CC6721771E8CBA7400C99117 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC6721751E8CBA7400C99117 /* Main.storyboard */; };
 		CC6721791E8CBA7400C99117 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC6721781E8CBA7400C99117 /* Assets.xcassets */; };
 		CC67217C1E8CBA7500C99117 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC67217A1E8CBA7500C99117 /* LaunchScreen.storyboard */; };
+		CC6721851E8CBB2900C99117 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC6721841E8CBB2900C99117 /* MediaPlayer.framework */; };
+		CC6721871E8CBB3000C99117 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC6721861E8CBB3000C99117 /* AVFoundation.framework */; };
+		CC6721891E8CBB6A00C99117 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC6721881E8CBB6A00C99117 /* AVKit.framework */; };
+		CC67218E1E8CE61600C99117 /* Britney Spears - Make Me.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CC67218D1E8CE61600C99117 /* Britney Spears - Make Me.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		CC6721781E8CBA7400C99117 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC67217B1E8CBA7500C99117 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC67217D1E8CBA7500C99117 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC6721841E8CBB2900C99117 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		CC6721861E8CBB3000C99117 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		CC6721881E8CBB6A00C99117 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		CC67218D1E8CE61600C99117 /* Britney Spears - Make Me.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Britney Spears - Make Me.mp4"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +41,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC6721891E8CBB6A00C99117 /* AVKit.framework in Frameworks */,
+				CC6721871E8CBB3000C99117 /* AVFoundation.framework in Frameworks */,
+				CC6721851E8CBB2900C99117 /* MediaPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +55,7 @@
 			children = (
 				CC67216B1E8CBA7400C99117 /* 网络视频播放 */,
 				CC67216A1E8CBA7400C99117 /* Products */,
+				CC6721831E8CBB2900C99117 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +70,7 @@
 		CC67216B1E8CBA7400C99117 /* 网络视频播放 */ = {
 			isa = PBXGroup;
 			children = (
+				CC67218D1E8CE61600C99117 /* Britney Spears - Make Me.mp4 */,
 				CC67216F1E8CBA7400C99117 /* AppDelegate.h */,
 				CC6721701E8CBA7400C99117 /* AppDelegate.m */,
 				CC6721721E8CBA7400C99117 /* ViewController.h */,
@@ -77,6 +90,16 @@
 				CC67216D1E8CBA7400C99117 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CC6721831E8CBB2900C99117 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC6721881E8CBB6A00C99117 /* AVKit.framework */,
+				CC6721861E8CBB3000C99117 /* AVFoundation.framework */,
+				CC6721841E8CBB2900C99117 /* MediaPlayer.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +164,7 @@
 				CC67217C1E8CBA7500C99117 /* LaunchScreen.storyboard in Resources */,
 				CC6721791E8CBA7400C99117 /* Assets.xcassets in Resources */,
 				CC6721771E8CBA7400C99117 /* Main.storyboard in Resources */,
+				CC67218E1E8CE61600C99117 /* Britney Spears - Make Me.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +297,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4GB3PHABNJ;
 				INFOPLIST_FILE = "网络视频播放/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "lianyun.------";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -285,6 +310,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4GB3PHABNJ;
 				INFOPLIST_FILE = "网络视频播放/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "lianyun.------";
 				PRODUCT_NAME = "$(TARGET_NAME)";
